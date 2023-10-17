@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario</title>
+  <!-- Agregar enlaces a los archivos CSS de Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Agregar enlaces a los archivos CSS de Bootstrap y Bootstrap Icons -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+<style>
+    /* Estilos personalizados */
+    .form-container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+
+</head>
+<body>
+    <div class="container" style="background-color: beige;">
+        <h1 class="mt-4" style="text-align: center;">Formulario de Datos</h1>
+        <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label for="numeroCampo">Número (Máximo 10 caracteres)</label>
+                    <input type="text" class="form-control" id="numeroCampo" maxlength="10">
+                </div>
+                <div class="form-group">
+                    <label for="textoCampo1">Texto 1 (Máximo 40 caracteres)</label>
+                    <input type="text" class="form-control" id="textoCampo1" maxlength="40">
+                </div>
+                <div class="form-group">
+                    <label for="textoCampo2">Texto 2 (Máximo 40 caracteres)</label>
+                    <input type="text" class="form-control" id="textoCampo2" maxlength="40">
+                </div>
+                <div class="form-group">
+                    <label for="textoMultilinea">Texto Multilínea (Máximo 200 caracteres)</label>
+                    <textarea class="form-control" id="textoMultilinea" rows="3" maxlength="200"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="fechaCampo">Fecha</label>
+                    <input type="date" class="form-control" id="fechaCampo">
+                </div>
+                <div class="form-group">
+                    <label for="horaCampo">Hora</label>
+                    <input type="time" class="form-control" id="horaCampo">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="casillaCampo">
+                    <label class="form-check-label" for="casillaCampo">Casilla de Verificación</label>
+                </div>
+                <div class="form-group">
+                    <label>Opciones (Seleccione una)</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="opcionesRadio" id="opcion1" value="opcion1">
+                        <label class="form-check-label" for="opcion1">Opción 1</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="opcionesRadio" id="opcion2" value="opcion2">
+                        <label class="form-check-label" for="opcion2">Opción 2</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="opcionesRadio" id="opcion3" value="opcion3">
+                        <label class="form-check-label" for="opcion3">Opción 3</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="colorCampo">Seleccione un Color</label>
+                    <input type="color" class="form-control" id="colorCampo">
+                </div>
+                <div class="form-group">
+                    <label for="emailCampo">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="emailCampo">
+                </div>
+                <div class="form-group">
+                    <label for="listaDesplegable">Campo Lista Desplegable</label>
+                    <select class="form-select" id="listaDesplegable">
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="listaMultiple">Campo Lista Desplegable Múltiple</label>
+                    <select multiple class="form-select" id="listaMultiple">
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="autocompleteCampo">Campo Autocompletado</label>
+                    <input type="text" class="form-control" id="autocompleteCampo" list="opcionesAutocompletado">
+                    <datalist id="opcionesAutocompletado">
+                        <option value="Opción 1">
+                        <option value="Opción 2">
+                        <option value="Opción 3">
+                    </datalist>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
